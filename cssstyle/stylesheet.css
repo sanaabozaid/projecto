@@ -1,0 +1,588 @@
+/* 
+1-common styles
+2-general styles
+3-sections: 
+  1-header section
+  2-home section
+  3-about section
+  4-profilito section
+  5-services section
+  6-prices section
+  7-team section
+  8-blog page
+  9-contact us section
+  10-fotter section
+  */
+
+  /* common styles 
+    1- opacity hover
+    2- section padding
+    3- section header
+    4- hover in header
+    5- hover effect 1 (left to right)
+    6- hover effect 2 (top to right)\
+    7- container
+    */
+
+
+
+    /*general style */
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .clear{clear:both;}
+
+    .body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h1 , h2 , h3 , h4 , h5 , h6{
+font-family: inherit;
+
+    }
+    button{
+      font-family: inherit;
+    }
+   /* common style*/
+   /*header*/
+   
+
+
+/*protoflio*/
+.protoflio-page{
+  background-color: #999;
+}
+/* .protoflio-item{
+
+} */
+.protoflio-item{  float:left;
+  width:30%;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 20px;
+  /*padding is important^*/}
+.protoflio-item img{
+  width:100%;
+} 
+.protoflio-item .layer-content{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+
+}
+/* .protoflio-item .layer-content{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+} */
+.protoflio-item:hover .layer-content{
+  opacity:1;
+  visibility: visible;
+}
+.protoflio-item .layer-info{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.layer-content .category{
+color:white;
+font-size: 20px;
+text-transform: capitalize;
+margin-bottom: 10px;
+position: relative;
+transition: opacity .5s visiblity .5s;
+top:10px;
+transition-delay: .3s;
+}
+.layer-content .layer-content-tittle{
+color:white;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+margin-bottom: 15px;
+position: relative;
+transition: opacity .5s visiblity .5s;
+top:10px;
+transition-delay: .5s;
+}
+.layer-content .ox{
+color:royalblue;
+padding: 0 7px;
+position: relative;
+transition: opacity .5s visiblity .5s;
+top:10px;
+transition-delay: 0.7s;
+}
+
+
+/* offer */
+.offer-item{
+border: #e8e8e8 solid 1px;
+float: left;
+text-align: center;
+height: 250px;
+position: relative;
+margin-bottom: 5%;
+width: 30%;
+
+}
+.offer-content{overflow: hidden;}
+.offer-item .icon2{
+  color: royalblue;
+  position: absolute;
+  top:20px;
+  left:20px;
+  font-size: 30px;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.offer-title{
+  margin:30 0;
+  font-size:30px;
+}
+.ofer-desc{
+  font-size: 15px;
+  color: #888;
+}
+.offer-item:hover  .icon2{
+  color: white;
+}
+.offer-item:hover  .offer-title{
+  color: white;
+}
+/* section-service */
+.service{
+  background-color: #e8e8e8;
+}
+.service-content{
+  overflow: hidden;
+}
+.service-item{
+  float:left;
+  width: 50%;
+}
+.service-img{
+  margin-left:100px;
+}
+.service-left .header-section{
+  text-align: left;
+}
+.service-left .section-line{
+  margin-left: 0;
+}
+.service-item-desc{
+  color: #999;
+  padding-right: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  letter-spacing: 1.1px;
+  text-transform: capitalize;
+}
+.service-list{
+  color: #999;
+  list-style: none;
+  font-size: 20px;
+}
+.service-list li{margin-bottom: 10px;}
+.service-list li i{
+  color: royalblue;
+}
+.service-img img{
+  width: 100%;
+}
+.service-bolts{
+  list-style: none;
+text-align: center;}
+.service-bolts li{
+  width: 10px;
+  height:10px;
+  display: inline-block;
+  background-color: rgb(40, 39, 38);
+  margin: 10px 10px;
+  border-radius: 50%;
+  
+}
+.service-bolts li.active{
+  background-color:royalblue;
+}
+.service-bolts li:hover{
+  background-color: royalblue;
+}
+/* numbers */
+.numbers{
+  background-image: url(../accessories/models/ul2.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.numbers-item{
+  overflow:hidden;
+}
+.number-item{
+  float:left;
+  width: 25%;
+  text-align: center;
+  padding: 200px 0; /*insted of pd-y*/
+}
+.number-item .iconna{
+  margin-bottom: 15px;
+  color: royalblue;
+  font-size: 40px;
+}
+.number-item-title{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: color .7s;
+}
+.number-item-text{
+  color: white;
+  font-weight: bold;
+  transition: color .5s;
+}
+/* pricing */
+.pricing-plan{
+  overflow:hidden;
+}
+.pricing-item{
+  width: 30%;
+  float:left;
+  padding:40px 20px;
+  border: #e8e8e8 solid 1px;
+  text-align: center;
+}
+.pricing-plan-text{
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #999;
+  transition: color .9s;
+}
+.pricing-item-permonth{
+  width: 130px;
+  height:130px;
+ padding: 20px 0; 
+ /* instead of height */
+  /* background: red; */
+  margin:20px auto;
+  border: 2px solid royalblue;
+  border-radius: 50%;
+  transition: color .5s; /*عشان الايفيكيت من فوق لتحت  tb-effect بياخد وقت قد ايه وكده*/
+}
+.pricing-item-permonth .dolar{
+  font-size: 50px;
+}
+.pricing-item-permonth .month{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.pricing-list{
+  list-style: none;
+}
+.pricing-list li{
+  color: #999;
+  line-height: 1.8;
+
+}
+.pricing-item-purchase{
+  background: none;
+  display: block;
+  padding: 10;
+  margin: 15px auto 0 auto;
+  border:0;
+  width:120px;
+  border:2px solid royalblue;
+  color:royalblue;
+  transition: color 1s; /*عشان الايفيكيت من فوق لتحت  tb-effect بياخد وقت قد ايه وكده*/
+}
+.tb-effect{
+  position: relative;
+}
+.tb-effect:after{
+  content: "";
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right:0;
+  left:0;
+  background-color: #333;
+ height: 0;
+ width:100%;
+  z-index: -1;
+  transition: height .5s;
+}
+.tb-effect:hover:after{
+  height:100%;
+}
+/* .pricing-item:hover .pricing-item-purchase{
+  color: white;
+} */
+.pricing-item:hover .pricing-item-permonth{
+  color: white;
+}
+.pricing-item:hover .pricing-plan-text{
+  color: royalblue;
+}
+/* testmonial */
+.testmonial{
+  position: relative;
+  background-image: url(../accessories/testmonial.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+}
+.testmonial-content{
+  overflow: hidden;
+  padding:100px 0;
+  /* هنقلل  العرض ونديله مارجين عشان الشكل يبقي افضل  */
+  width: 90%;
+  margin: auto;
+}
+.testmonial-item{
+  width: 50%;
+  float:left;
+  color:white;
+}
+.testmoial-desc{
+  color: white;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.testmonial-toplayer{
+  padding: 10px 0 40px 80px; /*increase botoom to prvent pic from covering under-text the same for left*/
+  position: relative;
+}
+.testmonial-toplayer img{
+  position: absolute;
+  left:15px;
+  top:15px;
+  border-radius: 50%;
+}
+.testmonial-toplayer h2{
+  margin: 5px;
+
+}
+.testmonial-toplayer span{
+  color: blue;
+}
+/* team */
+.team{
+overflow: hidden;
+}
+.team-content{
+  overflow:hidden;
+}
+.team-item{
+  width: 30%;
+  float: left;
+  background: #e8e8e8;
+  padding: 40px 20px; /*background under img*/
+  text-align: center;
+}
+.team-item .team-img{
+  width: 90%;
+  margin: auto;
+  height: 80%;
+  position: relative;
+
+
+
+}
+.team-item .team-img img{
+  width: 100%;
+  margin: auto;
+  height: 100%;
+
+}
+.overlay-team{
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:rgba(0, 0, 0, .5) ;/*عشان تبقي شفافه*/
+  opacity:0;             /*اول خطوه عشان يظهر ويختفي*/
+  visibility: hidden;       /*تاني خطوه عشان يظهر ويختفي*/
+
+}
+.overlay-team a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: royalblue;
+  margin-left: auto;/*move it to the right of pic*/
+}
+.overlay-team i{
+color:white;
+line-height: 40px;
+}
+
+.team-item .team-info-title{
+  color: #222;
+  margin: 12px 0;
+
+}
+.team-item .team-info-text{
+ color: #999;
+ text-transform: uppercase;
+ font-size: 14px;
+}
+.team-item:hover .overlay-team{
+  opacity: 1;
+  visibility: visible;
+}
+.team-item.tb-effect{
+  z-index: 1; /*عشان كان بيظهر ورا الباك جراوند */
+}
+.team-item:hover .team-info-title{
+  color: white;
+
+}
+.team-item:hover .team-info-text{
+color: royalblue;
+}
+/* blog-section */
+a {
+  text-decoration: none;
+  
+}
+.blog{
+  overflow:hidden;
+  background-color: #e8e8e8;
+}
+.blog-content{
+  overflow: hidden;
+}
+.blog-item{
+  float: left;
+  width: 30%;
+  background-color: white;
+}
+
+.blog-item-img img{
+  width: 100%;
+}
+.blog-list{
+  list-style: none;
+  margin: 10px 0;
+
+}
+.blog-list li{
+  display: inline-block;
+  margin:0 5px;
+
+}
+.blog-info{
+  padding:20px;
+}
+.blog-list li i{
+  color: royalblue;
+}
+.blog-title{
+  font-weight: bold;
+  margin:20px 0;
+}
+.blog-desk{
+  color: #999;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  
+}
+.blog-link{
+  color: royalblue;
+}
+
+.contact-content{
+  overflow: hidden;
+}
+.contact-item{
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.contact-item i{
+  color: royalblue;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.contact-item .contact-title{
+  margin-bottom:30px ;
+  font-weight: bold;
+
+}
+.contact-desc{
+  color: #999;
+  text-transform: capitalize;
+}
+
+
+/* footer */
+.footer .img{
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-image: url(../accessories/models/footer4.jpg);
+  height: 300px;
+  position: relative;
+}
+.footer{
+  text-align: center;
+}
+.footer-content{
+  position: absolute;
+}
+.footer-list li{
+  display: inline-block;
+  margin-top:140px;
+  margin-bottom: 20px;
+  
+
+}
+.footer-list li a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #999;
+  color: white;
+  margin:0 5px;
+  
+ 
+}
+.footer-list li a i{
+  line-height: 50px;
+}
+.footer .copy-right{
+  color: #999;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.hover-opacity{
+  transition: opacity.5s;
+}
+.hover-opacity:hover{
+  opacity:.8s;
+}

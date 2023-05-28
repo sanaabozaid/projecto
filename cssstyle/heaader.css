@@ -1,0 +1,78 @@
+.hover-opacity{
+    transition: .5s;
+   }
+   .hover-opacity:hover{
+    opacity: .7;
+   }
+   .header{  
+     position: fixed;
+     width: 100%;
+     z-index:10;
+   }
+    .container{
+      width:80%;
+      margin:auto;
+    }
+    .header .logo img{
+      width:10%;
+      margin-top: 10px;
+    }
+    .header .logo{
+      float:left;
+      display: 40%;
+    }
+    .header .navbar{
+      float: left;
+      width: 60%;
+    }
+    .header .navbar >li{
+      display: inline-block;
+      list-style: none;
+    }
+    .header .navbar > li > a{
+      display:block;
+      text-decoration: none;
+      padding:23 15px;
+      color: white;
+    }
+    .header .navbar > li > a:after ,.header .navbar > li > a.active:after{
+      content:"";
+      display:block;
+      height: 2px;
+      background-color: royalblue;
+      transition: width 0.5s;
+
+  }
+  .header .navbar > li > a:after{width:0;}
+
+    .header .navbar > li > a.active:after{
+      width:100%;
+    }
+    .header .navbar > li > a:hover:after{
+      width:100%;
+    }
+    /*dropdown*/
+    .dropdown{
+      position: relative;
+    }
+    .dropdown-menue{
+      background-color: royalblue;
+      position: absolute;
+      width: 150px;
+      left:-32px;
+      text-align: center;
+      top:80%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .5s , visibility .5s;
+    }
+    .dropdown:hover .dropdown-menue{
+      visibility: visible;
+      opacity: 1;
+    }
+    .dropdown-menue a{
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color:white;
+    }

@@ -1,0 +1,58 @@
+ /*about*/
+ .about-content{overflow:hidden;}
+ .about-content .about-item{
+  float: left;
+  border:1px solid #e8e8e8;
+  width:30%;
+  text-align: center;
+  height:350px;
+  padding:50px 0;
+ }
+ .about-item .about-tittle{
+   font-size: 25px;
+   margin-bottom: 10px;
+   text-transform: capitalize;
+ }
+ .about-item .about-desc{
+ color:#888;
+ margin-bottom: 30px;
+ line-height: 1.5;
+ letter-spacing: 1.1px;
+ }
+ .about-link{
+  text-decoration: none;
+  color: royalblue;
+  text-transform: capitalize;
+  
+ }
+.about-item .icon{ color:royalblue;
+ margin-bottom: 20px;
+}
+.mg{
+ margin: 0 5%;
+}
+.mg .about-desc{
+ margin-bottom: 50px;
+}
+.ltr-effect{
+ position: relative;
+}
+.ltr-effect:after{
+ content: "";
+ position: absolute;
+ top:0;
+ bottom: 0;
+ right:0;
+ left:0;
+ background-color: #333;
+ width:0;
+
+ z-index: -1;
+ transition: width .5s;
+}
+.ltr-effect:hover:after{
+ width:100%;
+}
+.ltr-effect:hover .about-tittle {
+color:white;
+}
